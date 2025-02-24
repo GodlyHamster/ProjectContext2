@@ -700,6 +700,7 @@ MonoBehaviour:
     Negeer wat ik zojuist
     zei'
   - Anyways, ik wil kaas, ik ben ook een klant
+  textSpeed: 2
 --- !u!1 &588942985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1230,7 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 588942986}
   - {fileID: 1527430098}
   - {fileID: 904808906}
   - {fileID: 421750456}
-  - {fileID: 588942986}
