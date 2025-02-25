@@ -1,6 +1,8 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,11 +13,19 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI dialogueText;
 
+    [Header("Options")]
+    [SerializeField]
+    private Transform dialogueOptionParent;
+    [SerializeField]
+    private GameObject optionButtonPrefab;
+    private List<GameObject> currentOptions = new List<GameObject>();
+
     private int currentSentence = 0;
 
     private bool isSentenceOngoing = false;
 
     private DialogueNPC currentDialogueData;
+
 
     private void Awake()
     {
@@ -38,18 +48,32 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        if (currentSentence+1 == currentDialogueData.Sentences.Length)
+        SkipToSentence(currentSentence + 1);
+    }
+
+    private void SkipToSentence(int sentenceNumber)
+    {
+        if (sentenceNumber >= currentDialogueData.Sentences.Length)
         {
             ExitDialogue();
             return;
         }
 
-        if (isSentenceOngoing) 
+        if (isSentenceOngoing)
         {
             StopAllCoroutines();
         }
 
-        currentSentence++;
+        if (currentOptions.Count > 0)
+        {
+            for (int i = 0; i < currentOptions.Count; i++)
+            {
+                Destroy(currentOptions[i]);
+            }
+            currentOptions.Clear();
+        }
+
+        currentSentence = sentenceNumber;
         StartCoroutine(DisplaySentece());
     }
 
@@ -64,6 +88,14 @@ public class DialogueManager : MonoBehaviour
     {
         isSentenceOngoing = true;
         float textSpeed = 1f / currentDialogueData.TextSpeed;
+
+        foreach (var item in currentDialogueData.Sentences[currentSentence].options)
+        {
+            GameObject buttonObj = Instantiate(optionButtonPrefab, dialogueOptionParent);
+            currentOptions.Add(buttonObj);
+            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = item.text;
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SkipToSentence(item.linksToNumber));
+        }
         for (int i = 0; i <= currentDialogueData.Sentences[currentSentence].text.Length; i++)
         {
             dialogueText.text = currentDialogueData.Sentences[currentSentence].text.Substring(0, i);
