@@ -43,17 +43,12 @@ public class DialogueManager : MonoBehaviour
         currentDialogueData = data;
         currentSentence = 0;
         dialogueBox.SetActive(true);
-        StartCoroutine(DisplaySentece());
-    }
-
-    public void ContinueDialogue()
-    {
-        SkipToSentence(currentSentence + 1);
+        SkipToSentence(currentSentence);
     }
 
     private void SkipToSentence(int sentenceNumber)
     {
-        if (sentenceNumber >= currentDialogueData.Sentences.Length)
+        if (sentenceNumber >= currentDialogueData.Sentences.Length || sentenceNumber < 0)
         {
             ExitDialogue();
             return;
@@ -91,11 +86,13 @@ public class DialogueManager : MonoBehaviour
 
         foreach (var item in currentDialogueData.Sentences[currentSentence].options)
         {
-            GameObject buttonObj = Instantiate(optionButtonPrefab, dialogueOptionParent);
-            currentOptions.Add(buttonObj);
-            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = item.text;
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SkipToSentence(item.linksToNumber));
+            AddOptionButton(item.text, item.linksToNumber);
         }
+        if (currentOptions.Count == 0)
+        {
+            AddOptionButton(". . .", currentSentence + 1);
+        }
+
         for (int i = 0; i <= currentDialogueData.Sentences[currentSentence].text.Length; i++)
         {
             dialogueText.text = currentDialogueData.Sentences[currentSentence].text.Substring(0, i);
@@ -103,5 +100,13 @@ public class DialogueManager : MonoBehaviour
         }
         isSentenceOngoing = false;
         yield return null;
+    }
+
+    private void AddOptionButton(string text, int linksToSentence)
+    {
+        GameObject buttonObj = Instantiate(optionButtonPrefab, dialogueOptionParent);
+        currentOptions.Add(buttonObj);
+        buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        buttonObj.GetComponent<Button>().onClick.AddListener(() => SkipToSentence(linksToSentence));
     }
 }
