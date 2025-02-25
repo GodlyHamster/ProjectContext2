@@ -64,9 +64,9 @@ public class DialogueManager : MonoBehaviour
     {
         isSentenceOngoing = true;
         float textSpeed = 1f / currentDialogueData.TextSpeed;
-        for (int i = 0; i <= currentDialogueData.Sentences[currentSentence].Length; i++)
+        for (int i = 0; i <= currentDialogueData.Sentences[currentSentence].text.Length; i++)
         {
-            dialogueText.text = currentDialogueData.Sentences[currentSentence].Substring(0, i);
+            dialogueText.text = currentDialogueData.Sentences[currentSentence].text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
         }
         isSentenceOngoing = false;

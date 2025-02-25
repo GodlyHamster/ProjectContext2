@@ -4,13 +4,12 @@ using EasyButtons;
 public class DialogueNPC : MonoBehaviour
 {
     [SerializeField]
-    [TextArea(3, 7)]
-    private string[] sentences;
+    private DialogueText[] sentences;
     [SerializeField]
     [Tooltip("Resembles the amount of letters per second")]
     private int textSpeed;
     public int TextSpeed { get { return textSpeed; } }
-    public string[] Sentences {  get { return sentences; } }
+    public DialogueText[] Sentences {  get { return sentences; } }
 
     [Button]
     public void TriggerDialogue()
