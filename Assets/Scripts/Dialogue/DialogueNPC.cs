@@ -1,7 +1,6 @@
 using UnityEngine;
-using EasyButtons;
 
-public class DialogueNPC : MonoBehaviour
+public class DialogueNPC : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private DialogueText[] sentences;
@@ -11,15 +10,34 @@ public class DialogueNPC : MonoBehaviour
     public int TextSpeed { get { return textSpeed; } }
     public DialogueText[] Sentences {  get { return sentences; } }
 
-    [Button]
+    private bool currentlyInDialogue = false;
+
+    private void Start()
+    {
+        DialogueManager.Instance.OnEndDialogue.AddListener(DialogueEnded);
+    }
+
+    [ContextMenu("Trigger Dialogue")]
     public void TriggerDialogue()
     {
         DialogueManager.Instance.EnterDialogue(this);
+        currentlyInDialogue = true;
     }
 
-    [Button]
+    [ContextMenu("Exit Dialogue")]
     public void ExitDialogue()
     {
         DialogueManager.Instance.ExitDialogue();
+    }
+
+    private void DialogueEnded()
+    {
+        currentlyInDialogue = false;
+    }
+
+    public void OnInteract()
+    {
+        if (currentlyInDialogue) return;
+        TriggerDialogue();
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -26,6 +27,9 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueNPC currentDialogueData;
 
+    public UnityEvent OnStartDialogue = new UnityEvent();
+    public UnityEvent OnEndDialogue = new UnityEvent();
+
 
     private void Awake()
     {
@@ -43,6 +47,7 @@ public class DialogueManager : MonoBehaviour
         currentDialogueData = data;
         currentSentence = 0;
         dialogueBox.SetActive(true);
+        OnStartDialogue.Invoke();
         SkipToSentence(currentSentence);
     }
 
@@ -77,6 +82,7 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         dialogueBox.SetActive(false);
         currentDialogueData = null;
+        OnEndDialogue.Invoke();
     }
 
     private IEnumerator DisplaySentece()
