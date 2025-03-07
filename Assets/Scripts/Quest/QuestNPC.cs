@@ -6,7 +6,11 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 {
     [SerializeField]
     [Tooltip("Each dialogue sequence is linked to a quest state")]
-    public DialogueSequence[] dialogueSequences;
+    private DialogueSequence[] dialogueSequences;
+
+    [SerializeField]
+    private int totalSteps = 0;
+    private int currentStep = 0;
 
     public QuestState currentQuestState { get; private set; } = QuestState.CAN_START;
 
@@ -29,9 +33,11 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     public void OnQuestStepComplete(int step)
     {
-        Debug.Log($"Completed step {step}");
-        //TODO: track steps and only set state to can_finish on last step
-        currentQuestState = QuestState.CAN_FINISH;
+        currentStep = step;
+        if (currentStep >= totalSteps - 1)
+        {
+            currentQuestState = QuestState.CAN_FINISH;
+        }
     }
 
     public void OnCompleteQuest()
@@ -44,6 +50,9 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
         if (_currentlyInDialogue) return;
 
         _currentlyInDialogue = true;
-        DialogueManager.Instance.EnterDialogue(dialogueSequences[(int)currentQuestState].sentences);
+
+        int currentDialogueInt = (int)currentQuestState + currentStep;
+
+        DialogueManager.Instance.EnterDialogue(dialogueSequences[currentDialogueInt].sentences);
     }
 }

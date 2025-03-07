@@ -1707,6 +1707,7 @@ MonoBehaviour:
       OnDialogueEvent:
         m_PersistentCalls:
           m_Calls: []
+  totalSteps: 1
 --- !u!4 &1961108129
 Transform:
   m_ObjectHideFlags: 0
