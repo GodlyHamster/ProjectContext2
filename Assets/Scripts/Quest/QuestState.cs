@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public enum QuestState
 {
     CAN_START,

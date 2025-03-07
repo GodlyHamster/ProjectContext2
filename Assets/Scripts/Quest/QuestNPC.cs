@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System;
 using UnityEngine.Events;
 
 public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
