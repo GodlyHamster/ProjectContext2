@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 [Serializable]
 public class DialogueText
@@ -8,4 +9,7 @@ public class DialogueText
     public string text;
 
     public DialogueOption[] options;
+    public int textSpeed = 20;
+
+    public UnityEvent OnDialogueEvent = new UnityEvent();
 }
