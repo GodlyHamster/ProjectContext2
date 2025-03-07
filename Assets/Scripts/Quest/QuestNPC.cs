@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.Events;
 
 public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 {
@@ -16,6 +17,8 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     private bool _currentlyInDialogue = false;
 
+    public UnityEvent<QuestState> OnQuestStateUpdated = new UnityEvent<QuestState>();
+
     private void Start()
     {
         DialogueManager.Instance.OnEndDialogue.AddListener(DialogueEnded);
@@ -24,6 +27,7 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
     private void DialogueEnded()
     {
         _currentlyInDialogue = false;
+        OnQuestStateUpdated.Invoke(currentQuestState);
     }
 
     public void OnStartQuest()
