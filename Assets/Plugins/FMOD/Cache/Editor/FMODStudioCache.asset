@@ -15,7 +15,235 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638768028459562039
+  lastModified: 638775600626160792
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6938487268417704085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/work district
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/work district
+  Guid:
+    Data1: -711888275
+    Data2: 1287717634
+    Data3: -1320500291
+    Data4: -1087522241
+  Banks:
+  - {fileID: 91802641314135404}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6908326686213193610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/festival celebration
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/festival celebration
+  Guid:
+    Data1: -1316887299
+    Data2: 1274764373
+    Data3: 953403045
+    Data4: 1156078951
+  Banks:
+  - {fileID: -3256016657203949189}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6376077698027511760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay music/loop
+  m_EditorClassIdentifier: 
+  Name: loop
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3254451781
+    data2: 2334198837
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6199285811063099054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/button press
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/button press
+  Guid:
+    Data1: 1702739987
+    Data2: 1182758808
+    Data3: -961816163
+    Data4: -604744705
+  Banks:
+  - {fileID: -3256016657203949189}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5585298445816034547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/item pick up
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/item pick up
+  Guid:
+    Data1: 319036673
+    Data2: 1288473733
+    Data3: 532588701
+    Data4: -1054487272
+  Banks:
+  - {fileID: -3256016657203949189}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4889776760651026081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/the lake
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/the lake
+  Guid:
+    Data1: -540194705
+    Data2: 1267258207
+    Data3: -156911177
+    Data4: 1586323059
+  Banks:
+  - {fileID: 91802641314135404}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 137400
+--- !u!114 &-4148059916050522386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay music/progression
+  m_EditorClassIdentifier: 
+  Name: progression
+  StudioPath: 
+  Min: 0
+  Max: 120
+  Default: 0
+  ID:
+    data1: 2199034123
+    data2: 4125932393
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3374555324430827326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/victory music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/victory music
+  Guid:
+    Data1: 1797792339
+    Data2: 1114014824
+    Data3: 1222084751
+    Data4: -156138114
+  Banks:
+  - {fileID: 1645388269068819408}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3256016657203949189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/SFX.bank
+  Name: Desktop/SFX
+  StudioPath: bank:/SFX
+  lastModified: 638768553061143652
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -33,15 +261,76 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 1398508368154792411}
   - {fileID: -8532421586281065446}
+  - {fileID: 91802641314135404}
+  - {fileID: 1645388269068819408}
+  - {fileID: -3256016657203949189}
   EditorEvents:
-  - {fileID: 7650907291160373713}
+  - {fileID: 4139948965712181405}
+  - {fileID: 6707551682100220797}
+  - {fileID: 5864235416540255474}
+  - {fileID: -6938487268417704085}
+  - {fileID: -4889776760651026081}
+  - {fileID: -3374555324430827326}
+  - {fileID: 1191039158849479540}
+  - {fileID: -5585298445816034547}
+  - {fileID: -6199285811063099054}
+  - {fileID: 6590628600780344187}
+  - {fileID: 4441257072058090130}
+  - {fileID: -6908326686213193610}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8532421586281065446}
   StringsBanks:
   - {fileID: 1398508368154792411}
-  cacheTime: 638768028459568620
+  cacheTime: 638775600637011456
   cacheVersion: 131846
+--- !u!114 &91802641314135404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/AMB.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/AMB.bank
+  Name: Desktop/AMB
+  StudioPath: bank:/AMB
+  lastModified: 638768553060719619
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1191039158849479540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/gameplay music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/gameplay music
+  Guid:
+    Data1: -1437618085
+    Data2: 1335273092
+    Data3: -1716615018
+    Data4: 1362281253
+  Banks:
+  - {fileID: 1645388269068819408}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6376077698027511760}
+  - {fileID: -4148059916050522386}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 108000
 --- !u!114 &1398508368154792411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,12 +346,30 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638768028459568620
+  lastModified: 638775600626165383
   FileSizes:
   - Name: 
-    Value: 770
+    Value: 1570
   Exists: 1
---- !u!114 &7650907291160373713
+--- !u!114 &1645388269068819408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/MUSIC.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/MUSIC.bank
+  Name: Desktop/MUSIC
+  StudioPath: bank:/MUSIC
+  lastModified: 638775600637011456
+  FileSizes: []
+  Exists: 1
+--- !u!114 &4139948965712181405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,20 +379,128 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/New Event
+  m_Name: event:/Ambiences/housing district
   m_EditorClassIdentifier: 
-  Path: event:/New Event
+  Path: event:/Ambiences/housing district
   Guid:
-    Data1: 1288830852
-    Data2: 1126319893
-    Data3: 750259606
-    Data4: -320879101
+    Data1: 1921678119
+    Data2: 1185760770
+    Data3: -1508169598
+    Data4: -502238722
   Banks:
-  - {fileID: -8532421586281065446}
-  IsStream: 1
+  - {fileID: 91802641314135404}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 242808
+  Length: 0
+--- !u!114 &4441257072058090130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/quest complete
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/quest complete
+  Guid:
+    Data1: 2140440241
+    Data2: 1268200174
+    Data3: -1875289702
+    Data4: -1984890090
+  Banks:
+  - {fileID: -3256016657203949189}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5864235416540255474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/the dump
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/the dump
+  Guid:
+    Data1: 1910601824
+    Data2: 1213784492
+    Data3: -82258498
+    Data4: -417175455
+  Banks:
+  - {fileID: 91802641314135404}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 168038
+--- !u!114 &6590628600780344187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/dialogue box
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/dialogue box
+  Guid:
+    Data1: -1081515441
+    Data2: 1080519284
+    Data3: -13100646
+    Data4: -644503085
+  Banks:
+  - {fileID: -3256016657203949189}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6707551682100220797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/town square
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/town square
+  Guid:
+    Data1: -1123452350
+    Data2: 1203636111
+    Data3: -1621526383
+    Data4: -1284297246
+  Banks:
+  - {fileID: 91802641314135404}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
