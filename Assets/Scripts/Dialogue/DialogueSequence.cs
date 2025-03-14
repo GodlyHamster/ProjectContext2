@@ -4,7 +4,9 @@ using UnityEngine;
 [Serializable]
 public class DialogueSequence
 {
-    [Tooltip("Use this to label quest progression: Can_Start, Step_3, Finished, etc.")]
-    public string name;
+    [Tooltip("What state this dialogue will be played in")]
+    public QuestState state;
+    [Tooltip("Is only used when the state is started")]
+    public int stepNumber;
     public DialogueText[] sentences;
 }

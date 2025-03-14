@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -44,6 +45,7 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     public void OnCompleteQuest()
     {
+        if (currentQuestState != QuestState.CAN_FINISH) return;
         currentQuestState = QuestState.FINISHED;
     }
 
@@ -53,8 +55,26 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
         _currentlyInDialogue = true;
 
-        int currentDialogueInt = (int)currentQuestState + currentStep;
+        DialogueSequence currentDialogueSequence = GetCorrectDialogueSequence();
+        if (currentDialogueSequence == null) return;
 
-        DialogueManager.Instance.EnterDialogue(dialogueSequences[currentDialogueInt].sentences);
+        DialogueManager.Instance.EnterDialogue(currentDialogueSequence.sentences);
+    }
+
+    private DialogueSequence GetCorrectDialogueSequence()
+    {
+        for (int i = 0; i < dialogueSequences.Length; i++)
+        {
+            DialogueSequence currentSequence = dialogueSequences[i];
+            if (currentSequence.state == currentQuestState)
+            {
+                if (currentSequence.state == QuestState.STARTED && currentSequence.stepNumber == currentStep)
+                {
+                    return currentSequence;
+                }
+                return currentSequence;
+            }
+        }
+        return null;
     }
 }
