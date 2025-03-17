@@ -936,7 +936,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918763338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af1e0bde7d09d1445aed830e6a1366c5, type: 3}
   m_Name: 
@@ -1578,7 +1578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: HouseB
-  exitPointID: HouseBID
+  exitPointID: HouseB
 --- !u!4 &1923470895
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,6 +1602,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5044284344701717659, guid: c73fffee390e49b4f9c0f5cd197d4e42, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6750724831662516660, guid: c73fffee390e49b4f9c0f5cd197d4e42, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

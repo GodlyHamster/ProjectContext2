@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,14 +10,21 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.interpolation = RigidbodyInterpolation.Interpolate; // Helps smooth physics movement
+        rb.interpolation = RigidbodyInterpolation.None;
+
+        StartCoroutine(EnableInterpolationAfterDelay(0.5f));
+    }
+
+    private IEnumerator EnableInterpolationAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
     private void Update()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
-
         moveInput = new Vector3(moveX, 0, moveZ).normalized * speed;
     }
 
@@ -28,9 +36,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Smooth deceleration
             Vector3 horizontalVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
-            Vector3 smoothVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 0.1f);
+            Vector3 smoothVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 0.2f);
             rb.linearVelocity = new Vector3(smoothVelocity.x, rb.linearVelocity.y, smoothVelocity.z);
         }
     }

@@ -11,17 +11,11 @@ public class TransitionTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log($"[TransitionTrigger] Setting lastExitPoint: {exitPointID} before loading {sceneToLoad}");
+            // Store where the player is leaving from
             SceneTransitionManager.Instance.lastExitPoint = exitPointID;
 
-            // Ensure SceneTransitionManager persists
-            if (SceneTransitionManager.Instance == null)
-            {
-                Debug.LogError("[TransitionTrigger] SceneTransitionManager instance is missing!");
-            }
-
+            // Load the new scene
             SceneManager.LoadScene(sceneToLoad);
         }
     }
-
 }
