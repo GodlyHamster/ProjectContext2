@@ -1,21 +1,16 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TransitionTrigger : MonoBehaviour
 {
-    [Header("Transition Settings")]
-    public string sceneToLoad; // Scene name to load
-    public string exitPointID; // Unique ID of this exit (to be remembered)
+    public string sceneToLoad;
+    public string exitPointID;
 
+    //Sends relevant data to scene fader
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && SceneFader.Instance != null)
         {
-            // Store where the player is leaving from
-            SceneTransitionManager.Instance.lastExitPoint = exitPointID;
-
-            // Load the new scene
-            SceneManager.LoadScene(sceneToLoad);
+            SceneFader.Instance.TransitionToScene(sceneToLoad, exitPointID);
         }
     }
 }

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(EnableInterpolationAfterDelay(0.5f));
     }
 
+    //enables interpolation after delay
     private IEnumerator EnableInterpolationAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);

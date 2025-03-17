@@ -6,13 +6,12 @@ public class SceneSpawnPoint : MonoBehaviour
 
     private void Start()
     {
-        // Find the transition manager
         if (SceneTransitionManager.Instance != null)
         {
-            // Check if this is the correct spawn point
+            // Check if spawn point is correct
             if (SceneTransitionManager.Instance.lastExitPoint == spawnPointID)
             {
-                // Move the player to this spawn point
+                // Moves player to spawn point
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 if (player != null)
                 {
