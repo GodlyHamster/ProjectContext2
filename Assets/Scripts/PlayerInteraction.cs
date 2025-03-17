@@ -20,6 +20,12 @@ public class PlayerInteraction : MonoBehaviour
     {
         var colliders = Physics.OverlapSphere(transform.position, interactionRadius);
 
+        if (colliders.Length == 0)
+        {
+            closestInteractable = null;
+            return;
+        }
+
         float closestDistance = interactionRadius;
         foreach (var collider in colliders)
         {

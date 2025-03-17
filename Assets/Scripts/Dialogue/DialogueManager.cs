@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool isSentenceOngoing = false;
 
-    private DialogueNPC currentDialogueData;
+    private DialogueText[] currentDialogueData;
 
     public UnityEvent OnStartDialogue = new UnityEvent();
     public UnityEvent OnEndDialogue = new UnityEvent();
@@ -42,9 +42,9 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
-    public void EnterDialogue(DialogueNPC data)
+    public void EnterDialogue(DialogueText[] text)
     {
-        currentDialogueData = data;
+        currentDialogueData = text;
         currentSentence = 0;
         dialogueBox.SetActive(true);
         OnStartDialogue.Invoke();
@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
 
     private void SkipToSentence(int sentenceNumber)
     {
-        if (sentenceNumber >= currentDialogueData.Sentences.Length || sentenceNumber < 0)
+        if (sentenceNumber >= currentDialogueData.Length || sentenceNumber < 0)
         {
             ExitDialogue();
             return;
@@ -88,9 +88,11 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator DisplaySentece()
     {
         isSentenceOngoing = true;
-        float textSpeed = 1f / currentDialogueData.TextSpeed;
 
-        foreach (var item in currentDialogueData.Sentences[currentSentence].options)
+        currentDialogueData[currentSentence].OnDialogueEvent?.Invoke();
+        float textSpeed = 1f / currentDialogueData[currentSentence].textSpeed;
+
+        foreach (var item in currentDialogueData[currentSentence].options)
         {
             AddOptionButton(item.text, item.linksToNumber);
         }
@@ -99,9 +101,9 @@ public class DialogueManager : MonoBehaviour
             AddOptionButton(". . .", currentSentence + 1);
         }
 
-        for (int i = 0; i <= currentDialogueData.Sentences[currentSentence].text.Length; i++)
+        for (int i = 0; i <= currentDialogueData[currentSentence].text.Length; i++)
         {
-            dialogueText.text = currentDialogueData.Sentences[currentSentence].text.Substring(0, i);
+            dialogueText.text = currentDialogueData[currentSentence].text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
         }
         isSentenceOngoing = false;
