@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DialogueScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SceneTransition.unity
+    guid: 7c9041270d89e8242b541699d1ce6bc1
+  - enabled: 1
+    path: Assets/Scenes/HouseA.unity
+    guid: f8b50d9b6cfbf1346b48068845fc5b59
+  - enabled: 1
+    path: Assets/Scenes/HouseB.unity
+    guid: 731f6176d87a3b94f9120fc3d7db6c80
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

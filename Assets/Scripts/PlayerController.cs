@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.interpolation = RigidbodyInterpolation.Interpolate; // Helps smooth physics movement
     }
 
     private void Update()
@@ -27,11 +28,10 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            //Deaccelerates movement
+            // Smooth deceleration
             Vector3 horizontalVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
-            Vector3 smoothVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 5f * Time.deltaTime);
+            Vector3 smoothVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 0.1f);
             rb.linearVelocity = new Vector3(smoothVelocity.x, rb.linearVelocity.y, smoothVelocity.z);
         }
     }
-
 }
