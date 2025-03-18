@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8656633557376296413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/church
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/church
+  Guid:
+    Data1: -711888275
+    Data2: 1287717634
+    Data3: -1320500291
+    Data4: -1087522241
+  Banks:
+  - {fileID: 91802641314135404}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218000
 --- !u!114 &-8532421586281065446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,36 +42,9 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638775600626160792
+  lastModified: 638779037502907266
   FileSizes: []
   Exists: 1
---- !u!114 &-6938487268417704085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambiences/work district
-  m_EditorClassIdentifier: 
-  Path: event:/Ambiences/work district
-  Guid:
-    Data1: -711888275
-    Data2: 1287717634
-    Data3: -1320500291
-    Data4: -1087522241
-  Banks:
-  - {fileID: 91802641314135404}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-6908326686213193610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/SFX.bank
   Name: Desktop/SFX
   StudioPath: bank:/SFX
-  lastModified: 638768553061143652
+  lastModified: 638779038947027102
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -268,7 +268,6 @@ MonoBehaviour:
   - {fileID: 4139948965712181405}
   - {fileID: 6707551682100220797}
   - {fileID: 5864235416540255474}
-  - {fileID: -6938487268417704085}
   - {fileID: -4889776760651026081}
   - {fileID: -3374555324430827326}
   - {fileID: 1191039158849479540}
@@ -277,12 +276,14 @@ MonoBehaviour:
   - {fileID: 6590628600780344187}
   - {fileID: 4441257072058090130}
   - {fileID: -6908326686213193610}
+  - {fileID: -8656633557376296413}
+  - {fileID: 3384115295772645588}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8532421586281065446}
   StringsBanks:
   - {fileID: 1398508368154792411}
-  cacheTime: 638775600637011456
+  cacheTime: 638779038947027102
   cacheVersion: 131846
 --- !u!114 &91802641314135404
 MonoBehaviour:
@@ -299,8 +300,32 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/AMB.bank
   Name: Desktop/AMB
   StudioPath: bank:/AMB
-  lastModified: 638768553060719619
+  lastModified: 638778074790225572
   FileSizes: []
+  Exists: 1
+--- !u!114 &435902875095404086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Church Music/loop
+  m_EditorClassIdentifier: 
+  Name: loop
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3254451781
+    data2: 2334198837
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &1191039158849479540
 MonoBehaviour:
@@ -346,10 +371,10 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638775600626165383
+  lastModified: 638779037502912254
   FileSizes:
   - Name: 
-    Value: 1570
+    Value: 1606
   Exists: 1
 --- !u!114 &1645388269068819408
 MonoBehaviour:
@@ -366,9 +391,37 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/MUSIC.bank
   Name: Desktop/MUSIC
   StudioPath: bank:/MUSIC
-  lastModified: 638775600637011456
+  lastModified: 638779037511173075
   FileSizes: []
   Exists: 1
+--- !u!114 &3384115295772645588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Church Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Church Music
+  Guid:
+    Data1: 1053115202
+    Data2: 1233655162
+    Data3: -493520706
+    Data4: -1563033234
+  Banks:
+  - {fileID: 1645388269068819408}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 435902875095404086}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 105600
 --- !u!114 &4139948965712181405
 MonoBehaviour:
   m_ObjectHideFlags: 0
