@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 
 public class QuestManager : MonoBehaviour
 {
@@ -21,18 +20,12 @@ public class QuestManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
-
-        if (questDataList.Count > 0)
-        {
-            Debug.Log($"first quest in list is {questDataList.First().Value.name} quest");
-        }
     }
 
     public void AddQuest(QuestData questData)
     {
         if (this.questDataList.ContainsKey(questData.name)) return;
         questDataList.Add(questData.name, questData);
-        Debug.Log($"Added {questData.name} quest to list");
     }
 
     public QuestData GetQuestData(string questName)
