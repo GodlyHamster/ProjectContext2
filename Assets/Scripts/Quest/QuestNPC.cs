@@ -26,6 +26,8 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
         else
         {
             questData = QuestManager.instance?.GetQuestData(questData.name);
+            CheckCompletionAvailable();
+            OnQuestStateUpdated.Invoke(questData.state);
         }
 
         DialogueManager.Instance.OnEndDialogue.AddListener(DialogueEnded);
@@ -50,6 +52,11 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
     public void OnQuestStepComplete(int step)
     {
         questData.step = step;
+        CheckCompletionAvailable();
+    }
+
+    private void CheckCompletionAvailable()
+    {
         if (questData.step >= totalSteps)
         {
             questData.state = QuestState.CAN_FINISH;
