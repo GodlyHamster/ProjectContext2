@@ -609,7 +609,7 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 0
   HasPlatforms: 0
-  sourceProjectPath: 
+  sourceProjectPath: ../../FMOD Projects/Rat Game FMOD/Rat Game FMOD.fspro
   sourceBankPath: ../../FMOD Projects/Rat Game FMOD/Build/Desktop
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
@@ -632,11 +632,11 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Desktop/Master
+  - Master
   Banks:
-  - Desktop/AMB
-  - Desktop/MUSIC
-  - Desktop/SFX
+  - Amb Bank
+  - Music Bank
+  - SFX Bank
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
