@@ -4,11 +4,6 @@ public class DialogueNPC : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private DialogueText[] sentences;
-    [SerializeField]
-    [Tooltip("Resembles the amount of letters per second")]
-    private int textSpeed;
-    public int TextSpeed { get { return textSpeed; } }
-    public DialogueText[] Sentences {  get { return sentences; } }
 
     private bool currentlyInDialogue = false;
 
@@ -20,7 +15,7 @@ public class DialogueNPC : MonoBehaviour, IInteractable
     [ContextMenu("Trigger Dialogue")]
     public void TriggerDialogue()
     {
-        DialogueManager.Instance.EnterDialogue(this);
+        DialogueManager.Instance.EnterDialogue(sentences);
         currentlyInDialogue = true;
     }
 
