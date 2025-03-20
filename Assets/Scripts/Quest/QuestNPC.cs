@@ -5,13 +5,13 @@ using UnityEngine.Events;
 public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 {
     [SerializeField]
-    [Tooltip("Each dialogue sequence is linked to a quest state")]
     private DialogueSequence[] dialogueSequences;
 
+    [SerializeField]
+    private QuestData questData = new QuestData();
     private int totalSteps = 0;
-    private int currentStep = 0;
 
-    public QuestState currentQuestState { get; private set; } = QuestState.CAN_START;
+    public QuestState currentQuestState { get { return questData.state; } }
 
     private bool _currentlyInDialogue = false;
 
@@ -19,6 +19,15 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     private void Start()
     {
+        if (QuestManager.instance?.GetQuestData(questData.name) == null)
+        {
+            QuestManager.instance?.AddQuest(questData);
+        }
+        else
+        {
+            questData = QuestManager.instance?.GetQuestData(questData.name);
+        }
+
         DialogueManager.Instance.OnEndDialogue.AddListener(DialogueEnded);
 
         for (int i = 0; i < dialogueSequences.Length; i++)
@@ -35,22 +44,22 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     public void OnStartQuest()
     {
-        currentQuestState = QuestState.STARTED;
+        questData.state = QuestState.STARTED;
     }
 
     public void OnQuestStepComplete(int step)
     {
-        currentStep = step;
-        if (currentStep >= totalSteps)
+        questData.step = step;
+        if (questData.step >= totalSteps)
         {
-            currentQuestState = QuestState.CAN_FINISH;
+            questData.state = QuestState.CAN_FINISH;
         }
     }
 
     public void OnCompleteQuest()
     {
         if (currentQuestState != QuestState.CAN_FINISH) return;
-        currentQuestState = QuestState.FINISHED;
+        questData.state = QuestState.FINISHED;
     }
 
     public void OnInteract()
@@ -72,7 +81,7 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
             DialogueSequence currentSequence = dialogueSequences[i];
             if (currentSequence.state == currentQuestState)
             {
-                if (currentSequence.state == QuestState.STARTED && currentSequence.stepNumber != currentStep) continue;
+                if (currentSequence.state == QuestState.STARTED && currentSequence.stepNumber != questData.step) continue;
                 return currentSequence;
             }
         }
