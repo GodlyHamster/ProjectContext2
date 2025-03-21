@@ -10,6 +10,11 @@ public class QuestIcon : MonoBehaviour
     private QuestState currentState;
 
 
+    private void Awake()
+    {
+        npcParent = GetComponentInParent<QuestNPC>();
+    }
+
     private void Start()
     {
         if (npcParent == null)

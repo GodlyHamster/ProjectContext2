@@ -14,6 +14,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI dialogueText;
 
+    [Header("Character")]
+    [SerializeField]
+    private TextMeshProUGUI characterNameText;
+    [SerializeField]
+    private Image characterImage;
+
     [Header("Options")]
     [SerializeField]
     private Transform dialogueOptionParent;
@@ -90,8 +96,17 @@ public class DialogueManager : MonoBehaviour
         isSentenceOngoing = true;
 
         currentDialogueData[currentSentence].OnDialogueEvent?.Invoke();
+
         float textSpeed = 1f / currentDialogueData[currentSentence].textSpeed;
 
+        //set character info and scale image correctly
+        characterNameText.text = currentDialogueData[currentSentence].character?.characterName;
+        characterImage.sprite = currentDialogueData[currentSentence].character?.characterSprite;
+        characterImage.SetNativeSize();
+        RectTransform imageRect = characterImage.gameObject.GetComponent<RectTransform>();
+        imageRect.sizeDelta = (imageRect.sizeDelta / Mathf.Max(imageRect.sizeDelta.x, imageRect.sizeDelta.y)) * 100f;
+
+        //display option buttons
         foreach (var item in currentDialogueData[currentSentence].options)
         {
             AddOptionButton(item.text, item.linksToNumber);
@@ -101,6 +116,7 @@ public class DialogueManager : MonoBehaviour
             AddOptionButton(". . .", currentSentence + 1);
         }
 
+        //typewriter effect
         for (int i = 0; i <= currentDialogueData[currentSentence].text.Length; i++)
         {
             dialogueText.text = currentDialogueData[currentSentence].text.Substring(0, i);
