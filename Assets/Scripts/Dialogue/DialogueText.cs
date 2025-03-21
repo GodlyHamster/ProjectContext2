@@ -5,6 +5,7 @@ using UnityEngine.Events;
 [Serializable]
 public class DialogueText
 {
+    public DialogueCharacter character;
     [TextArea(3, 5)]
     public string text;
 

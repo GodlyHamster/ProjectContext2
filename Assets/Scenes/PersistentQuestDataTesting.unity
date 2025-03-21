@@ -643,6 +643,22 @@ PrefabInstance:
       value: Finished quest
       objectReference: {fileID: 0}
     - target: {fileID: 332114384489331421, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
+      propertyPath: dialogueSequences.Array.data[0].sentences.Array.data[0].character
+      value: 
+      objectReference: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+    - target: {fileID: 332114384489331421, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
+      propertyPath: dialogueSequences.Array.data[1].sentences.Array.data[0].character
+      value: 
+      objectReference: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+    - target: {fileID: 332114384489331421, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
+      propertyPath: dialogueSequences.Array.data[2].sentences.Array.data[0].character
+      value: 
+      objectReference: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+    - target: {fileID: 332114384489331421, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[0].character
+      value: 
+      objectReference: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+    - target: {fileID: 332114384489331421, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
       propertyPath: dialogueSequences.Array.data[4].sentences.Array.data[0].textSpeed
       value: 20
       objectReference: {fileID: 0}
