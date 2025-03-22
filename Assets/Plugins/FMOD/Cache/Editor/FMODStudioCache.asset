@@ -72,6 +72,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6599282801594742986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay music/music end
+  m_EditorClassIdentifier: 
+  Name: music end
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3977625826
+    data2: 3293933889
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6376077698027511760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,10 +318,8 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Amb Bank.bank
   Name: Amb Bank
   StudioPath: bank:/Amb Bank
-  lastModified: 638780877765139473
-  FileSizes:
-  - Name: Desktop
-    Value: 10812416
+  lastModified: 638780917020961082
+  FileSizes: []
   Exists: 1
 --- !u!114 &-3384546961535100650
 MonoBehaviour:
@@ -314,10 +336,8 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Music Bank.bank
   Name: Music Bank
   StudioPath: bank:/Music Bank
-  lastModified: 638780877765596650
-  FileSizes:
-  - Name: Desktop
-    Value: 8406144
+  lastModified: 638780917021367267
+  FileSizes: []
   Exists: 1
 --- !u!114 &-3374555324430827326
 MonoBehaviour:
@@ -411,7 +431,7 @@ MonoBehaviour:
   ID:
     data1: 3254451781
     data2: 2334198837
-  Type: 0
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -452,7 +472,7 @@ MonoBehaviour:
   - {fileID: 7751038427622946277}
   StringsBanks:
   - {fileID: 3120720002402511346}
-  cacheTime: 638780878889898393
+  cacheTime: 638780917021633965
   cacheVersion: 131846
 --- !u!114 &2873941088098922
 MonoBehaviour:
@@ -479,6 +499,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 1011117573400912349}
+  - {fileID: 7276263163680723418}
   MinDistance: 1
   MaxDistance: 20
   Length: 105600
@@ -547,7 +568,7 @@ MonoBehaviour:
   ID:
     data1: 3254451781
     data2: 2334198837
-  Type: 0
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -676,7 +697,7 @@ MonoBehaviour:
   ID:
     data1: 3254451781
     data2: 2334198837
-  Type: 0
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -819,7 +840,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -4141045899411497088}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -840,10 +861,10 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638780878889898393
+  lastModified: 638780917020986528
   FileSizes:
-  - Name: Desktop
-    Value: 1620
+  - Name: 
+    Value: 1660
   Exists: 1
 --- !u!114 &3384115295772645588
 MonoBehaviour:
@@ -1035,6 +1056,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 192248659404615158}
   - {fileID: 1643516031014293372}
+  - {fileID: -6599282801594742986}
   MinDistance: 1
   MaxDistance: 20
   Length: 108000
@@ -1065,6 +1087,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7276263163680723418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Church Music/music end
+  m_EditorClassIdentifier: 
+  Name: music end
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3977625826
+    data2: 3293933889
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7454159299045360974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,10 +1126,8 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/SFX Bank.bank
   Name: SFX Bank
   StudioPath: bank:/SFX Bank
-  lastModified: 638780877765831274
-  FileSizes:
-  - Name: Desktop
-    Value: 154240
+  lastModified: 638780917021633965
+  FileSizes: []
   Exists: 1
 --- !u!114 &7751038427622946277
 MonoBehaviour:
@@ -1100,10 +1144,8 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638780878889889764
-  FileSizes:
-  - Name: Desktop
-    Value: 1074
+  lastModified: 638780917020984372
+  FileSizes: []
   Exists: 1
 --- !u!114 &8201467214837390323
 MonoBehaviour:
