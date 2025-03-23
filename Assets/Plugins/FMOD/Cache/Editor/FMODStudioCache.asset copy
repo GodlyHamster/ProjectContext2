@@ -201,35 +201,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5178624076782521079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/RatDialogue
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/RatDialogue
-  Guid:
-    Data1: -1081515441
-    Data2: 1080519284
-    Data3: -13100646
-    Data4: -644503085
-  Banks:
-  - {fileID: 7454159299045360974}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 6796045212633317291}
-  - {fileID: 5051251735469974213}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
 --- !u!114 &-5106219606825462957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +227,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 178433
+  Length: 168038
 --- !u!114 &-4889776760651026081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +318,7 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Amb Bank.bank
   Name: Amb Bank
   StudioPath: bank:/Amb Bank
-  lastModified: 638783192662644915
+  lastModified: 638780917020961082
   FileSizes: []
   Exists: 1
 --- !u!114 &-3384546961535100650
@@ -365,7 +336,7 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Music Bank.bank
   Name: Music Bank
   StudioPath: bank:/Music Bank
-  lastModified: 638783197490285108
+  lastModified: 638782445778814798
   FileSizes: []
   Exists: 1
 --- !u!114 &-3374555324430827326
@@ -440,33 +411,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-390760720129905906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/TrashFall
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/TrashFall
-  Guid:
-    Data1: 119763865
-    Data2: 1308097954
-    Data3: -1842819187
-    Data4: -1164185879
-  Banks:
-  - {fileID: 7454159299045360974}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +430,7 @@ MonoBehaviour:
   - {fileID: -3384546961535100650}
   - {fileID: 7454159299045360974}
   EditorEvents:
+  - {fileID: 560604613069846572}
   - {fileID: 1094033205969843199}
   - {fileID: -5106219606825462957}
   - {fileID: 2580433081451735909}
@@ -497,14 +442,14 @@ MonoBehaviour:
   - {fileID: 348730261973473525}
   - {fileID: 275680626534371934}
   - {fileID: 4993762449429158475}
-  - {fileID: -5178624076782521079}
-  - {fileID: -390760720129905906}
+  - {fileID: 5224056471936988721}
+  - {fileID: 6229537363008495227}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7751038427622946277}
   StringsBanks:
   - {fileID: 3120720002402511346}
-  cacheTime: 638783197490285108
+  cacheTime: 638782462830736189
   cacheVersion: 131846
 --- !u!114 &2873941088098922
 MonoBehaviour:
@@ -682,6 +627,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &560604613069846572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/housing district
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/housing district
+  Guid:
+    Data1: 1921678119
+    Data2: 1185760770
+    Data3: -1508169598
+    Data4: -502238722
+  Banks:
+  - {fileID: -4141045899411497088}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1011117573400912349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,7 +769,7 @@ MonoBehaviour:
   Name: progression
   StudioPath: 
   Min: 0
-  Max: 100
+  Max: 120
   Default: 0
   ID:
     data1: 2199034123
@@ -866,10 +838,10 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638783192662685806
+  lastModified: 638782462829431968
   FileSizes:
   - Name: 
-    Value: 1728
+    Value: 1776
   Exists: 1
 --- !u!114 &3384115295772645588
 MonoBehaviour:
@@ -926,6 +898,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4277172154644209610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RatDialogue/TextSpeed
+  m_EditorClassIdentifier: 
+  Name: TextSpeed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3249601900
+    data2: 129260458
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &4441257072058090130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,7 +976,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5051251735469974213
+--- !u!114 &5224056471936988721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -989,21 +985,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/RatDialogue/TextSpeed
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/RatDialogue
   m_EditorClassIdentifier: 
-  Name: TextSpeed
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3249601900
-    data2: 129260458
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Path: event:/SFX/RatDialogue
+  Guid:
+    Data1: -1081515441
+    Data2: 1080519284
+    Data3: -13100646
+    Data4: -644503085
+  Banks:
+  - {fileID: 7454159299045360974}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7130602998152493386}
+  - {fileID: 4277172154644209610}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &5864235416540255474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,6 +1032,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 168038
+--- !u!114 &6229537363008495227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/TrashFall
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/TrashFall
+  Guid:
+    Data1: 119763865
+    Data2: 1308097954
+    Data3: -1842819187
+    Data4: -1164185879
+  Banks:
+  - {fileID: 7454159299045360974}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6590628600780344187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,7 +1144,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6796045212633317291
+--- !u!114 &7130602998152493386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1197,6 +1225,6 @@ MonoBehaviour:
   Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638783192662682023
+  lastModified: 638782462829426938
   FileSizes: []
   Exists: 1
