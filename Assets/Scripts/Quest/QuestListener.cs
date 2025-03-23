@@ -20,6 +20,7 @@ public class QuestListener : MonoBehaviour
     {
         if (questManager.GetQuestData(questStepTrigger.name).state == questStepTrigger.state && questManager.GetQuestData(questStepTrigger.name).step == questStepTrigger.step)
         {
+            Debug.Log("yeah it works here boss)");
             eventTriggered.Invoke();
         }
     }

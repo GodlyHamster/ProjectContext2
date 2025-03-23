@@ -510,8 +510,8 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 365406697}
             m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
-            m_MethodName: OnQuestStepComplete
-            m_Mode: 3
+            m_MethodName: OnStartQuest
+            m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -521,7 +521,7 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   - state: 1
-    stepNumber: 1
+    stepNumber: 0
     sentences:
     - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
       text: '"Bring the effigy to the Shrine in The Dumping Grounds."'
@@ -533,7 +533,7 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   - state: 2
-    stepNumber: 2
+    stepNumber: 0
     sentences:
     - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
       text: '"You''re back. I assume everything went well?"'
@@ -595,7 +595,7 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   questData:
-    name: Binjamin's Quest
+    name: BQ
     state: 0
     step: 0
   OnQuestStateUpdated:
@@ -720,11 +720,11 @@ Transform:
   m_GameObject: {fileID: 389455022}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.589, z: -0.13600016}
+  m_LocalPosition: {x: 0, y: 0.589, z: 3.284}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1717420737}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470300935
 GameObject:
@@ -2165,6 +2165,7 @@ GameObject:
   - component: {fileID: 1717420735}
   - component: {fileID: 1717420734}
   - component: {fileID: 1717420733}
+  - component: {fileID: 1717420738}
   m_Layer: 0
   m_Name: Shrine
   m_TagString: Untagged
@@ -2197,7 +2198,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 365406697}
+        m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+        m_MethodName: OnQuestStepComplete
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!65 &1717420734
 BoxCollider:
@@ -2285,10 +2298,40 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 3.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 389455026}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1717420738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbbaf8d83089914ab13ec4b44e055a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questStepTrigger:
+    name: BQ
+    state: 1
+    step: 0
+  eventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 365406697}
+        m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+        m_MethodName: OnQuestStepComplete
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1718930617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,3 +3203,4 @@ SceneRoots:
   - {fileID: 473421786}
   - {fileID: 365406698}
   - {fileID: 1717420737}
+  - {fileID: 389455026}
