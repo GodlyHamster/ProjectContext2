@@ -421,9 +421,181 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75fee6ab0e27b345a75b26c604719be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSequences: []
+  dialogueSequences:
+  - state: 0
+    stepNumber: 0
+    sentences:
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Ah, a new face. Another soul brought to us by The Great Hand."'
+      options:
+      - text: Hi
+        linksToNumber: 1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"Yep! I''m Hammy. Nice to meet ya."'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Likewise, friend, likewise."'
+      options:
+      - text: Help
+        linksToNumber: 3
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"Miss Rita told me if I helped out, I would be allowed to join the festival."'
+      options:
+      - text: '>'
+        linksToNumber: 4
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Hmm... Acting out of self interest, but clearly stemming from a desire
+        to spend time with others. Very well I have a task for you."'
+      options:
+      - text: '>'
+        linksToNumber: 5
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"I have made this small effigy to offer to the Great Hand, but I''m
+        afraid I''m a bit busy taking care of other matters."'
+      options:
+      - text: '>'
+        linksToNumber: 6
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"B: Could you offer it in my stead at the shrine in the Dumping Grounds."'
+      options:
+      - text: Sure
+        linksToNumber: 7
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"Sure! I''ll drop it off for you."'
+      options:
+      - text: '>'
+        linksToNumber: 8
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Don''t simply drop it off. Offer it. It''s a sign of our gratitude."'
+      options:
+      - text: Bye
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 365406697}
+            m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+            m_MethodName: OnQuestStepComplete
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 1
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - state: 1
+    stepNumber: 1
+    sentences:
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Bring the effigy to the Shrine in The Dumping Grounds."'
+      options:
+      - text: Bye
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - state: 2
+    stepNumber: 2
+    sentences:
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"You''re back. I assume everything went well?"'
+      options:
+      - text: Yes?
+        linksToNumber: 1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"Uhhh... I think? I placed your thingy down and then this big hand came
+        and dropped a large bag down."'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"T-the Great Hand revealed itself to you after you made the offering?"'
+      options:
+      - text: Yeah?
+        linksToNumber: 3
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"That''s incredible! This cannot be a coincedence... It must be a sign!"'
+      options:
+      - text: Yeah?
+        linksToNumber: 4
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: d992168f14794d142a56ca46307aaf45, type: 2}
+      text: '"Well, Child. You went above and beyond what I asked of you. I will
+        vouch for you."'
+      options:
+      - text: Thanks!
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 365406697}
+            m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+            m_MethodName: OnCompleteQuest
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   questData:
-    name: 
+    name: Binjamin's Quest
     state: 0
     step: 0
   OnQuestStateUpdated:
@@ -445,6 +617,114 @@ Transform:
   - {fileID: 1620995428}
   - {fileID: 1888392262}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &389455022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 389455026}
+  - component: {fileID: 389455025}
+  - component: {fileID: 389455024}
+  - component: {fileID: 389455023}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &389455023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389455022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &389455024
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389455022}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &389455025
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389455022}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &389455026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389455022}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.589, z: -0.13600016}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1717420737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470300935
 GameObject:
@@ -803,9 +1083,111 @@ MonoBehaviour:
       textSpeed: 20
       OnDialogueEvent:
         m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1175583434}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 473421785}
+            m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+            m_MethodName: OnQuestStepComplete
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 1
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - state: 1
+    stepNumber: 1
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Have you completed your task yet?"'
+      options:
+      - text: No
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - state: 2
+    stepNumber: 2
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"I just had a rather flustered Binjamin inform me that you have done
+        your task exceptionally well."'
+      options:
+      - text: Binjamin
+        linksToNumber: 1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"I didn''t really get what he was talking about, but he seemed really
+        happy though!"'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Hohoh! Right you are. but I''d say with that you have more than earned
+        to join the festivities this evening."'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"R: The festivities will commence soon. Talk to me when you are ready,
+        pup."'
+      options:
+      - text: Okay
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - state: 2
+    stepNumber: 3
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Are you ready?"'
+      options:
+      - text: Yes
+        linksToNumber: 1
+      - text: No
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"Okay let''s begin."'
+      options:
+      - text: '>'
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
           m_Calls: []
   questData:
-    name: 
+    name: Rita's Quest
     state: 0
     step: 0
   OnQuestStateUpdated:
@@ -1417,6 +1799,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1175583434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3691420051950973906, guid: 52f0c3f5edf21a04eb7f1ad3e114bdea, type: 3}
+  m_PrefabInstance: {fileID: 5527359636029615792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1444977694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +2152,143 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1717420732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717420737}
+  - component: {fileID: 1717420736}
+  - component: {fileID: 1717420735}
+  - component: {fileID: 1717420734}
+  - component: {fileID: 1717420733}
+  m_Layer: 0
+  m_Name: Shrine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1717420733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec7bba722d6e57419ca9a6a4746ff27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 389455022}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1717420734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1717420735
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1717420736
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1717420737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 389455026}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718930617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +3027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionTrigger-PersistentQuestB
       objectReference: {fileID: 0}
+    - target: {fileID: 3691420051950973906, guid: 52f0c3f5edf21a04eb7f1ad3e114bdea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6095722142921096179, guid: 52f0c3f5edf21a04eb7f1ad3e114bdea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.5
@@ -2631,3 +3159,4 @@ SceneRoots:
   - {fileID: 1039722794}
   - {fileID: 473421786}
   - {fileID: 365406698}
+  - {fileID: 1717420737}
