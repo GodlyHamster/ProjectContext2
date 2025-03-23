@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager instance;
 
     private Dictionary<string, QuestData> questDataList;
+    public Dictionary<string, QuestData> GetQuestDataList {  get { return questDataList; } }
 
     private void Awake()
     {
