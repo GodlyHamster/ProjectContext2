@@ -45,6 +45,24 @@ MonoBehaviour:
   lastModified: 638779037502907266
   FileSizes: []
   Exists: 1
+--- !u!114 &-7043332829868085093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638784268551783378
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-6908326686213193610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +157,7 @@ MonoBehaviour:
     Data3: 1222084751
     Data4: -156138114
   Banks:
-  - {fileID: -3384546961535100650}
+  - {fileID: 5237133758543925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -174,6 +192,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6037675110460456148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Amb Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/Amb Bank.bank
+  Name: Amb Bank
+  StudioPath: bank:/Amb Bank
+  lastModified: 638784268551718260
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5585298445816034547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +256,7 @@ MonoBehaviour:
     Data3: -13100646
     Data4: -644503085
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -249,7 +285,7 @@ MonoBehaviour:
     Data3: -82258498
     Data4: -417175455
   Banks:
-  - {fileID: -4141045899411497088}
+  - {fileID: -6037675110460456148}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -332,42 +368,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-4141045899411497088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Amb Bank.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Amb Bank.bank
-  Name: Amb Bank
-  StudioPath: bank:/Amb Bank
-  lastModified: 638783192662644915
-  FileSizes: []
-  Exists: 1
---- !u!114 &-3384546961535100650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music Bank.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Music Bank.bank
-  Name: Music Bank
-  StudioPath: bank:/Music Bank
-  lastModified: 638783197490285108
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-3374555324430827326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
     Data3: 532588701
     Data4: -1054487272
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -440,6 +440,44 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1610631249571835588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638784268551788798
+  FileSizes:
+  - Name: 
+    Value: 1728
+  Exists: 1
+--- !u!114 &-498446747803610474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/SFX Bank.bank
+  Name: SFX Bank
+  StudioPath: bank:/SFX Bank
+  lastModified: 638784268570611331
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-390760720129905906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +497,7 @@ MonoBehaviour:
     Data3: -1842819187
     Data4: -1164185879
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -480,11 +518,11 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3120720002402511346}
-  - {fileID: -4141045899411497088}
-  - {fileID: 7751038427622946277}
-  - {fileID: -3384546961535100650}
-  - {fileID: 7454159299045360974}
+  - {fileID: -1610631249571835588}
+  - {fileID: -6037675110460456148}
+  - {fileID: -7043332829868085093}
+  - {fileID: 5237133758543925}
+  - {fileID: -498446747803610474}
   EditorEvents:
   - {fileID: 1094033205969843199}
   - {fileID: -5106219606825462957}
@@ -501,10 +539,10 @@ MonoBehaviour:
   - {fileID: -390760720129905906}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7751038427622946277}
+  - {fileID: -7043332829868085093}
   StringsBanks:
-  - {fileID: 3120720002402511346}
-  cacheTime: 638783197490285108
+  - {fileID: -1610631249571835588}
+  cacheTime: 638784268570611331
   cacheVersion: 131846
 --- !u!114 &2873941088098922
 MonoBehaviour:
@@ -525,7 +563,7 @@ MonoBehaviour:
     Data3: -493520706
     Data4: -1563033234
   Banks:
-  - {fileID: -3384546961535100650}
+  - {fileID: 5237133758543925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -535,6 +573,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 105600
+--- !u!114 &5237133758543925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music Bank.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/Music Bank.bank
+  Name: Music Bank
+  StudioPath: bank:/Music Bank
+  lastModified: 638784268569854968
+  FileSizes: []
+  Exists: 1
 --- !u!114 &91802641314135404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,7 +628,7 @@ MonoBehaviour:
     Data3: -156911177
     Data4: 1586323059
   Banks:
-  - {fileID: -4141045899411497088}
+  - {fileID: -6037675110460456148}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -623,7 +679,7 @@ MonoBehaviour:
     Data3: -1875289702
     Data4: -1984890090
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -650,7 +706,7 @@ MonoBehaviour:
     Data3: -961816163
     Data4: -604744705
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -725,7 +781,7 @@ MonoBehaviour:
     Data3: -1621526383
     Data4: -1284297246
   Banks:
-  - {fileID: -4141045899411497088}
+  - {fileID: -6037675110460456148}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -843,7 +899,7 @@ MonoBehaviour:
     Data3: -1320500291
     Data4: -1087522241
   Banks:
-  - {fileID: -4141045899411497088}
+  - {fileID: -6037675110460456148}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -851,26 +907,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 218550
---- !u!114 &3120720002402511346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638783192662685806
-  FileSizes:
-  - Name: 
-    Value: 1728
-  Exists: 1
 --- !u!114 &3384115295772645588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +1008,7 @@ MonoBehaviour:
     Data3: 953403045
     Data4: 1156078951
   Banks:
-  - {fileID: 7454159299045360974}
+  - {fileID: -498446747803610474}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1078,7 +1114,7 @@ MonoBehaviour:
     Data3: -1716615018
     Data4: 1362281253
   Banks:
-  - {fileID: -3384546961535100650}
+  - {fileID: 5237133758543925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1163,40 +1199,4 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &7454159299045360974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX Bank.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/SFX Bank.bank
-  Name: SFX Bank
-  StudioPath: bank:/SFX Bank
-  lastModified: 638782462830736189
-  FileSizes: []
-  Exists: 1
---- !u!114 &7751038427622946277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Projects/Rat Game FMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638783192662682023
-  FileSizes: []
   Exists: 1
