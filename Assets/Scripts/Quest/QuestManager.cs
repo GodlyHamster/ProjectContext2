@@ -9,6 +9,8 @@ public class QuestManager : MonoBehaviour
     private Dictionary<string, QuestData> questDataList;
     public Dictionary<string, QuestData> GetQuestDataList {  get { return questDataList; } }
 
+    public UnityEvent<string> OnQuestUpdated = new UnityEvent<string>();
+
     private void Awake()
     {
         if (instance != null)
@@ -28,6 +30,14 @@ public class QuestManager : MonoBehaviour
     {
         if (this.questDataList.ContainsKey(questData.name)) return;
         questDataList.Add(questData.name, questData);
+        OnQuestUpdated.Invoke(questData.name);
+    }
+
+    public void UpdateQuest(QuestData questData)
+    {
+        if (!this.questDataList.ContainsKey(questData.name)) return;
+        questDataList[questData.name] = questData;
+        OnQuestUpdated.Invoke(questData.name);
     }
 
     public QuestData GetQuestData(string questName)
