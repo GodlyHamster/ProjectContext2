@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/DumpingGroundsTest.unity
     guid: 8d31abb1b3d447d41a04432d2915a6f4
   - enabled: 1
+    path: Assets/Scenes/TownSquareTest.unity
+    guid: 717ef7949781f454e8fba184135ce0da
+  - enabled: 1
+    path: Assets/Scenes/ChurchTest.unity
+    guid: a26df445aa70cd54f9d1038a86f1caed
+  - enabled: 1
     path: Assets/Scenes/SceneTransition.unity
     guid: 7c9041270d89e8242b541699d1ce6bc1
   - enabled: 1
@@ -20,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseB.unity
     guid: 731f6176d87a3b94f9120fc3d7db6c80
-  - enabled: 1
-    path: Assets/Scenes/PersistentQuestB.unity
-    guid: 717ef7949781f454e8fba184135ce0da
   - enabled: 1
     path: Assets/Scenes/PersistentQuestDataTesting.unity
     guid: c9ebcf55f20260a4399252edf7627b4b

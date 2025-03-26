@@ -159,6 +159,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  spriteTransform: {fileID: 9177010993149715179}
+  spriteRenderer: {fileID: 5217210595909975220}
+  frontSprite: {fileID: -593843106, guid: 1a12b561dd0ed0146a97915effe6afb6, type: 3}
+  backSprite: {fileID: 1513033669, guid: 1a12b561dd0ed0146a97915effe6afb6, type: 3}
+  hopHeight: 0.05
+  hopSpeed: 30
 --- !u!114 &8106566956917469855
 MonoBehaviour:
   m_ObjectHideFlags: 0

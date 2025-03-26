@@ -1,0 +1,923 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &817730376389223728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003852272882845216}
+  - component: {fileID: 1618533293630146799}
+  m_Layer: 0
+  m_Name: CanStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003852272882845216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817730376389223728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500562204894656578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1618533293630146799
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817730376389223728}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2351715139188790788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7500562204894656578}
+  - component: {fileID: 6422507629931661375}
+  m_Layer: 0
+  m_Name: QuestIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7500562204894656578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351715139188790788}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1003852272882845216}
+  - {fileID: 4506130660305533560}
+  - {fileID: 4639862096689622247}
+  - {fileID: 5279110063664900813}
+  m_Father: {fileID: 1984851047560659577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6422507629931661375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351715139188790788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3613bd7f41b1bc448872ee30f00ce881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icons:
+  - {fileID: 817730376389223728}
+  - {fileID: 8743161111242767417}
+  - {fileID: 2504208136070123538}
+  - {fileID: 5824625627436251148}
+  npcParent: {fileID: 6582609237864047217}
+--- !u!1 &2504208136070123538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4639862096689622247}
+  - component: {fileID: 5259146551646645793}
+  m_Layer: 0
+  m_Name: CanFinish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4639862096689622247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504208136070123538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500562204894656578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5259146551646645793
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504208136070123538}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 0.7885718, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &3208940576270551417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7890121328926467392}
+  - component: {fileID: 7679134847364117023}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7890121328926467392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208940576270551417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1984851047560659577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7679134847364117023
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208940576270551417}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 953225989, guid: 99c59280fd420c84b8936b8b3b67bc83, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &5824625627436251148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5279110063664900813}
+  - component: {fileID: 8291898392523604689}
+  m_Layer: 0
+  m_Name: Finished
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5279110063664900813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824625627436251148}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500562204894656578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8291898392523604689
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824625627436251148}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 1, b: 0.01666665, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &6795397611812116778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1984851047560659577}
+  - component: {fileID: 6582609237864047217}
+  - component: {fileID: 110240036487288185}
+  m_Layer: 0
+  m_Name: Mayor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1984851047560659577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795397611812116778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7890121328926467392}
+  - {fileID: 7500562204894656578}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6582609237864047217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795397611812116778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75fee6ab0e27b345a75b26c604719be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSequences:
+  - state: 0
+    stepNumber: 0
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Well hello there, little pup. You had quite the fall there. Are you
+        alright?"'
+      options:
+      - text: Yes
+        linksToNumber: 1
+      - text: No
+        linksToNumber: 3
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '" I think so... Though I did fall from quite high."'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"But not a bruise or scratch on you, hohoh! You are stronger than you
+        think."'
+      options:
+      - text: '>'
+        linksToNumber: 5
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"No! D-did you see from how high I fell?! That must be like 100 hamsters
+        t-tall!"'
+      options:
+      - text: '>'
+        linksToNumber: 4
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Alright calm down, little stuntman. You are going to be fine."'
+      options:
+      - text: '>'
+        linksToNumber: 5
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Can you tell me your name?"'
+      options:
+      - text: Name
+        linksToNumber: 6
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"It''s Hammy, miss. Hammy the Hamster."'
+      options:
+      - text: '>'
+        linksToNumber: 7
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"It''s nice to meet you, Hammy. I am Rita, and I welcome you to Rat
+        City."'
+      options:
+      - text: Rat City?
+        linksToNumber: 8
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"That''s right. We are a small community of rats that live down here.
+        Many of us were born here, but some remember glimpses of The Bright and The
+        Great Hand."'
+      options:
+      - text: Bright?
+        linksToNumber: 9
+      - text: Great Hand?
+        linksToNumber: 10
+      - text: '>'
+        linksToNumber: 11
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"The Bright is what we call the world above our home. It''s where our
+        resources flow from, and where The Great Hand resides."'
+      options:
+      - text: Great Hand?
+        linksToNumber: 10
+      - text: '>'
+        linksToNumber: 11
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"The Great Hand is a powerful being which has watched over Rat City
+        since its founding. It brought us to our new home through one of its vessels,
+        and it brings us gifts in exchange for reverence."'
+      options:
+      - text: Bright?
+        linksToNumber: 9
+      - text: '>'
+        linksToNumber: 11
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Ofcourse, the people of Rat City also contribute a great deal to its
+        success. especially with the Festival of Gratitude tonight."'
+      options:
+      - text: FESTIVAL?!
+        linksToNumber: 12
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"A... FESTIVAL?! Oh my gosh, oh my gosh! Do you give presents to eachother,
+        eat delicious food and like sing songs together?!"'
+      options:
+      - text: '>'
+        linksToNumber: 13
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Hohoh! All of that and more! The Festival of Gratitude is about thanking
+        the people of the community."'
+      options:
+      - text: Join
+        linksToNumber: 14
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"H: Oh wow... Can I join?"'
+      options:
+      - text: '>'
+        linksToNumber: 15
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"R: Oh I''m sorry, little pup. The festival is meant for the people
+        of the community. It wouldn''t be right if we let just anyone join the festivities.
+        You haven''t even taken a step in the city itself!"'
+      options:
+      - text: Community
+        linksToNumber: 16
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"H: Oh please please please please please! What if I become a community
+        member, can I join then?!"'
+      options:
+      - text: '>'
+        linksToNumber: 17
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Well... I suppose if you can prove yourself to be a good pillar of
+        the community, I suppose it would be only fair to allow you to join the festival."'
+      options:
+      - text: YAY!
+        linksToNumber: 18
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Hohoh! Such enthusiasm! Now let''s see what kind of tasks I can think
+        of for you..."'
+      options:
+      - text: '>'
+        linksToNumber: 19
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Well the church is an important part of the community, so I''d probably
+        say you should start there and speak to High Recycler Binjamin."'
+      options:
+      - text: '>'
+        linksToNumber: 20
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: "\"Normally, there\u2019d be more to do, but this will be enough to show
+        your dedication.\""
+      options:
+      - text: Okay!
+        linksToNumber: 21
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"I will do my absolute best, miss. You won''t regret this!"'
+      options:
+      - text: '>'
+        linksToNumber: 22
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Once you have completed Binjamin''s task, come speak to me at the town
+        square."'
+      options:
+      - text: Bye
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 6582609237864047217}
+            m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+            m_MethodName: OnStartQuest
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 1
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - state: 1
+    stepNumber: 0
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Have you completed your task yet?"'
+      options:
+      - text: No
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - state: 2
+    stepNumber: 0
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"I just had a rather flustered Binjamin inform me that you have done
+        your task exceptionally well."'
+      options:
+      - text: Binjamin
+        linksToNumber: 1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: e57b034b1b8cc5543a17eadafa0c7dcf, type: 2}
+      text: '"I didn''t really get what he was talking about, but he seemed really
+        happy though!"'
+      options:
+      - text: '>'
+        linksToNumber: 2
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Hohoh! Right you are. but I''d say with that you have more than earned
+        to join the festivities this evening."'
+      options:
+      - text: '>'
+        linksToNumber: 3
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"R: The festivities will commence soon. Talk to me when you are ready,
+        pup."'
+      options:
+      - text: Okay
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 6582609237864047217}
+            m_TargetAssemblyTypeName: QuestNPC, Assembly-CSharp
+            m_MethodName: OnCompleteQuest
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 1
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - state: 3
+    stepNumber: 0
+    sentences:
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Are you ready?"'
+      options:
+      - text: Yes
+        linksToNumber: 1
+      - text: No
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - character: {fileID: 11400000, guid: a235e9f65a45f804783a1b72764842db, type: 2}
+      text: '"Okay, let''s begin."'
+      options:
+      - text: '>'
+        linksToNumber: -1
+      textSpeed: 20
+      OnDialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  questData:
+    name: RQ
+    state: 0
+    step: 0
+  OnQuestStateUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &110240036487288185
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795397611812116778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8743161111242767417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4506130660305533560}
+  - component: {fileID: 5879273904314162632}
+  m_Layer: 0
+  m_Name: Started
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4506130660305533560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743161111242767417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7500562204894656578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5879273904314162632
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743161111242767417}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.37486643, g: 0.37486643, b: 0.37486643, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

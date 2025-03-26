@@ -17,7 +17,7 @@ public class QuestListener : MonoBehaviour
     private void CheckQuestTrigger(string name)
     {
         if (QuestManager.instance.GetQuestData(name) == null) return;
-
+        if (name != questStepTrigger.name) return;
         if (QuestManager.instance.GetQuestData(name).state == questStepTrigger.state && QuestManager.instance.GetQuestData(name).step == questStepTrigger.step)
         {
             Debug.Log("yeah it works here boss)");
