@@ -441,7 +441,7 @@ MonoBehaviour:
   characterImage: {fileID: 3618846960736406057}
   dialogueOptionParent: {fileID: 5471645127442049943}
   optionButtonPrefab: {fileID: 3483277484808424559, guid: 031eff10276964c47aef19d8a277fcae, type: 3}
-  ratTalkSound: {fileID: 6449553523804844796}
+  soundEmitter: {fileID: 6449553523804844796}
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []

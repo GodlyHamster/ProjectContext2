@@ -227,6 +227,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &309962196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309962199}
+  - component: {fileID: 309962198}
+  - component: {fileID: 309962197}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &309962197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309962196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1437618085
+      Data2: 1335273092
+      Data3: -1716615018
+      Data4: 1362281253
+    Path: event:/Music/gameplay music
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &309962198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309962196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb57fc2cae20a944b150667d280e931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  churchMusic:
+    Guid:
+      Data1: 1053115202
+      Data2: 1233655162
+      Data3: -493520706
+      Data4: -1563033234
+    Path: event:/Music/Church Music
+  audioEmitter: {fileID: 309962197}
+  musicVolume: 0.5
+--- !u!4 &309962199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309962196}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0801976, y: -0.29607803, z: 2.9425185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320295496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7673942502878240102, guid: 94b23dce734773a4f84232969a2be45a, type: 3}
@@ -591,6 +676,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb90de61d5bdadd4baca5f81779663b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1278182534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+  m_PrefabInstance: {fileID: 1851887672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1751386104
@@ -1022,6 +1118,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound
+      value: event:/SFX/RatDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: soundEmitter
+      value: 
+      objectReference: {fileID: 1278182534}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound.Path
+      value: event:/SFX/RatDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound.Guid.Data1
+      value: -1081515441
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound.Guid.Data2
+      value: 1080519284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound.Guid.Data3
+      value: -13100646
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550025092378664647, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: ratTalkSound.Guid.Data4
+      value: -644503085
+      objectReference: {fileID: 0}
     - target: {fileID: 4779868210094495712, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1339,3 +1463,4 @@ SceneRoots:
   - {fileID: 7429327696030018632}
   - {fileID: 581662843}
   - {fileID: 8790845187211059888}
+  - {fileID: 309962199}
