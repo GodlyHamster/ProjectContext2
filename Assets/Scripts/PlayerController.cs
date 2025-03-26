@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             if (spriteRenderer != null)
             {
-                if (moveZ < 0)
+                if (moveZ < 0 || (moveZ == 0 && moveX != 0))
                 {
                     if (frontSprite != null)
                         spriteRenderer.sprite = frontSprite;
