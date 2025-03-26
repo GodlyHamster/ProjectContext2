@@ -18,6 +18,11 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     private void Start()
     {
+        for (int i = 0; i < dialogueSequences.Length; i++)
+        {
+            if (dialogueSequences[i].state == QuestState.STARTED) totalSteps++;
+        }
+
         if (QuestManager.instance?.GetQuestData(questData.name) == null)
         {
             QuestManager.instance?.AddQuest(questData);
@@ -30,16 +35,12 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
         }
 
         DialogueManager.Instance.OnEndDialogue.AddListener(DialogueEnded);
-
-        for (int i = 0; i < dialogueSequences.Length; i++)
-        {
-            if (dialogueSequences[i].state == QuestState.STARTED) totalSteps++;
-        }
     }
 
     private void DialogueEnded()
     {
         _currentlyInDialogue = false;
+        QuestManager.instance.UpdateQuest(questData);
         OnQuestStateUpdated.Invoke(currentQuestState);
     }
 
@@ -56,6 +57,8 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     private void CheckCompletionAvailable()
     {
+        Debug.Log($"current step: {questData.step}; total steps: {totalSteps}");
+        if (questData.state != QuestState.STARTED) return;
         if (questData.step >= totalSteps)
         {
             questData.state = QuestState.CAN_FINISH;
