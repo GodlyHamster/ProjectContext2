@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GameObject optionButtonPrefab;
     private List<GameObject> currentOptions = new List<GameObject>();
+
+    [Header("Audio")]
+    [SerializeField]
+    private StudioEventEmitter ratTalkSound;
 
     private int currentSentence = 0;
 
@@ -117,11 +122,13 @@ public class DialogueManager : MonoBehaviour
         }
 
         //typewriter effect
+        ratTalkSound.Play();
         for (int i = 0; i <= currentDialogueData[currentSentence].text.Length; i++)
         {
             dialogueText.text = currentDialogueData[currentSentence].text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
         }
+        ratTalkSound.Stop();
         isSentenceOngoing = false;
         yield return null;
     }

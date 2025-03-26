@@ -8,8 +8,6 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField]
     private PlayableAsset playable;
 
-    private bool _isPlaying = false;
-
     private void Start()
     {
         playableDirector = GetComponent<PlayableDirector>();
