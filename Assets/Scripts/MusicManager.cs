@@ -6,7 +6,9 @@ public class MusicManager : MonoBehaviour
     public static MusicManager instance;
 
     [SerializeField]
-    private StudioEventEmitter audioEmitter;
+    private StudioEventEmitter gameMusic;
+    [SerializeField]
+    private StudioEventEmitter churchMusic;
 
     [SerializeField]
     private float musicVolume = 1f;
@@ -26,7 +28,22 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        audioEmitter.EventInstance.setVolume(musicVolume);
+        gameMusic.EventInstance.setVolume(musicVolume);
+        churchMusic.EventInstance.setVolume(musicVolume);
+    }
+
+    [ContextMenu("Enter church")]
+    public void EnterChurch()
+    {
+        gameMusic.Stop();
+        churchMusic.Play();
+    }
+
+    [ContextMenu("Exit church")]
+    public void ExitChurch()
+    {
+        churchMusic.Stop();
+        gameMusic.Play();
     }
 
     /// <summary>
@@ -35,6 +52,6 @@ public class MusicManager : MonoBehaviour
     /// <param name="progression"></param>
     public void SetFestivalProgress(float progression)
     {
-        audioEmitter.SetParameter("progression", progression);
+        gameMusic.SetParameter("progression", progression);
     }
 }
