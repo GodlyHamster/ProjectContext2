@@ -633,8 +633,12 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
+  - Desktop/Master
   Banks:
   - Amb Bank
+  - Desktop/Amb Bank
+  - Desktop/Music Bank
+  - Desktop/SFX Bank
   - Music Bank
   - SFX Bank
   BanksToLoad: []
