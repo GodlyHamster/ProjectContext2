@@ -12798,6 +12798,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4980257309799796872, guid: a1820952d9d56ae42a71ae99f51c55d2, type: 3}
   m_PrefabInstance: {fileID: 854187082}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &868210554 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2333046275209536303, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
+  m_PrefabInstance: {fileID: 1447565945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb90de61d5bdadd4baca5f81779663b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &869569628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28130,6 +28141,38 @@ PrefabInstance:
     - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
       propertyPath: questData.state
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 868210554}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayCutscene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CutsceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 85321deef28d0914fb55cc3b2c64bfa4, type: 2}
+    - target: {fileID: 6582609237864047217, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
+      propertyPath: dialogueSequences.Array.data[3].sentences.Array.data[1].OnDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Playables.PlayableAsset, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6795397611812116778, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
       propertyPath: m_Name
