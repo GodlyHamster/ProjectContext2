@@ -5,6 +5,8 @@ public class QuestListener : MonoBehaviour
 {
     [SerializeField]
     private QuestData questStepTrigger;
+    [SerializeField]
+    private bool triggerAfterCompletion;
 
     public UnityEvent eventTriggered = new UnityEvent();
 
@@ -16,11 +18,30 @@ public class QuestListener : MonoBehaviour
 
     private void CheckQuestTrigger(string name)
     {
-        if (QuestManager.instance.GetQuestData(name) == null) return;
+        QuestData data = QuestManager.instance.GetQuestData(name);
+        if (data == null) return;
+        if (name != questStepTrigger.name) return;
 
-        if (QuestManager.instance.GetQuestData(name).state == questStepTrigger.state && QuestManager.instance.GetQuestData(name).step == questStepTrigger.step)
+        if (questStepTrigger.state == data.state && questStepTrigger.step == data.step)
         {
             eventTriggered.Invoke();
+            return;
+        }
+        if (triggerAfterCompletion)
+        {
+            if (data.state > questStepTrigger.state)
+            {
+                eventTriggered.Invoke();
+                return;
+            }
+            if (questStepTrigger.state == QuestState.STARTED && data.state == QuestState.STARTED)
+            {
+                if (data.step >= questStepTrigger.step)
+                {
+                    eventTriggered.Invoke();
+                    return;
+                }
+            }
         }
     }
 }

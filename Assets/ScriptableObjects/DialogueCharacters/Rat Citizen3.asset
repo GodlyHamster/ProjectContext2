@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9261519b9d9b1d949b0e1b8ec039bef4, type: 3}
-  m_Name: Pope
+  m_Name: Rat Citizen3
   m_EditorClassIdentifier: 
-  characterName: High Recycler Binjamin
-  characterSprite: {fileID: 1626246410, guid: 35ebf35b505545f4eb75660e460b8e93, type: 3}
+  characterName: Rat Citizen
+  characterSprite: {fileID: 2105538744, guid: 18f7bad920ee9e94e9cff7236ada6dd1, type: 3}

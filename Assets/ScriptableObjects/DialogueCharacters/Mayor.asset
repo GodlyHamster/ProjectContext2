@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9261519b9d9b1d949b0e1b8ec039bef4, type: 3}
-  m_Name: Pope
+  m_Name: Mayor
   m_EditorClassIdentifier: 
-  characterName: High Recycler Binjamin
-  characterSprite: {fileID: 1626246410, guid: 35ebf35b505545f4eb75660e460b8e93, type: 3}
+  characterName: Mayor Rita
+  characterSprite: {fileID: 953225989, guid: 99c59280fd420c84b8936b8b3b67bc83, type: 3}
