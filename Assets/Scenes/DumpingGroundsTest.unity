@@ -790,7 +790,9 @@ GameObject:
   - component: {fileID: 1717420736}
   - component: {fileID: 1717420735}
   - component: {fileID: 1717420734}
+  - component: {fileID: 1717420739}
   - component: {fileID: 1717420738}
+  - component: {fileID: 1717420740}
   m_Layer: 0
   m_Name: Shrine
   m_TagString: Untagged
@@ -903,6 +905,71 @@ MonoBehaviour:
     name: BQ
     state: 1
     step: 0
+  triggerAfterCompletion: 1
+  eventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 267538039}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1717420739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbbaf8d83089914ab13ec4b44e055a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questStepTrigger:
+    name: RQ
+    state: 1
+    step: 0
+  triggerAfterCompletion: 1
+  eventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1175583434}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1717420740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717420732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbbaf8d83089914ab13ec4b44e055a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questStepTrigger:
+    name: BQ
+    state: 1
+    step: 0
+  triggerAfterCompletion: 0
   eventTriggered:
     m_PersistentCalls:
       m_Calls:
@@ -917,30 +984,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1175583434}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 267538039}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1751386104
 PrefabInstance:
@@ -1646,7 +1689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6795397611812116778, guid: 4aefbd45dffe0ff4bad35a3fbcc7b0a7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
