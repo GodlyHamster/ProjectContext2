@@ -8,9 +8,12 @@ public class MainMenu : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration = 1f;
 
+    [SerializeField]
+    private string gameScene;
+
     public void StartGame()
     {
-        StartCoroutine(FadeOut(() => SceneManager.LoadScene("DumpingGroundsTest")));
+        StartCoroutine(FadeOut(() => SceneManager.LoadScene(gameScene)));
     }
 
     public void QuitGame()

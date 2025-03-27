@@ -32,7 +32,8 @@ public class CutsceneManager : MonoBehaviour
     public void PlayCutscene(PlayableAsset cutsceneAsset)
     {
         playable = cutsceneAsset;
-        PlayCutscene();
+        playableDirector.playableAsset = playable;
+        playableDirector.Play();
     }
 
     [ContextMenu("Pause Cutscene")]

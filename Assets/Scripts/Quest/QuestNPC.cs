@@ -57,7 +57,6 @@ public class QuestNPC : MonoBehaviour, IInteractable, IQuestInterface
 
     private void CheckCompletionAvailable()
     {
-        Debug.Log($"current step: {questData.step}; total steps: {totalSteps}");
         if (questData.state != QuestState.STARTED) return;
         if (questData.step >= totalSteps)
         {
