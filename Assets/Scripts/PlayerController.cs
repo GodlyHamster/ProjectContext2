@@ -4,18 +4,31 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
+
+    public Transform spriteTransform;
+    public SpriteRenderer spriteRenderer;
+
+    public Sprite frontSprite;
+    public Sprite backSprite;
+
+    public float hopHeight = 0.1f;
+    public float hopSpeed = 10f;
+
     private Rigidbody rb;
     private Vector3 moveInput;
+    private Vector3 originalSpritePosition;
+    private float hopTimer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.interpolation = RigidbodyInterpolation.None;
 
+        originalSpritePosition = spriteTransform.localPosition;
+
         StartCoroutine(EnableInterpolationAfterDelay(0.5f));
     }
 
-    //enables interpolation after delay
     private IEnumerator EnableInterpolationAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -27,6 +40,31 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
         moveInput = new Vector3(moveX, 0, moveZ).normalized * speed;
+
+        if (moveInput.magnitude > 0.1f)
+        {
+            if (spriteRenderer != null)
+            {
+                if (moveZ < 0 || (moveZ == 0 && moveX != 0))
+                {
+                    if (frontSprite != null)
+                        spriteRenderer.sprite = frontSprite;
+                }
+                else if (moveZ > 0)
+                {
+                    if (backSprite != null)
+                        spriteRenderer.sprite = backSprite;
+                }
+            }
+            hopTimer += Time.deltaTime * hopSpeed;
+            float hopOffset = Mathf.Sin(hopTimer) * hopHeight;
+            spriteTransform.localPosition = originalSpritePosition + new Vector3(0, hopOffset, 0);
+        }
+        else
+        {
+            spriteTransform.localPosition = originalSpritePosition;
+            hopTimer = 0;
+        }
     }
 
     private void FixedUpdate()
