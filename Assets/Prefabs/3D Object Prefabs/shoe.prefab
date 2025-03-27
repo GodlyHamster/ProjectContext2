@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: e6ed84d0cbef8b544a8959427ee084d3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b633d0b8b79c43240921bc0354526ead, type: 2}
+      objectReference: {fileID: 2100000, guid: c8b4a4dfac1b8cd47a438262c935b6b5, type: 2}
     - target: {fileID: 919132149155446097, guid: e6ed84d0cbef8b544a8959427ee084d3, type: 3}
       propertyPath: m_Name
       value: shoe
