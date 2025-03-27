@@ -1,5 +1,7 @@
 using FMODUnity;
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
@@ -9,11 +11,25 @@ public class MusicManager : MonoBehaviour
     private StudioEventEmitter gameMusic;
     [SerializeField]
     private StudioEventEmitter churchMusic;
+    [SerializeField]
+    private string churchScene;
+
+    private string currentScene;
 
     [SerializeField]
     private float musicVolume = 1f;
 
     private int festivalProgression;
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     private void Awake()
     {
@@ -30,6 +46,19 @@ public class MusicManager : MonoBehaviour
     {
         gameMusic.EventInstance.setVolume(musicVolume);
         churchMusic.EventInstance.setVolume(musicVolume);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadMode)
+    {
+        if (scene.name == churchScene)
+        {
+            EnterChurch();
+        }
+        else if (currentScene == churchScene)
+        {
+            ExitChurch();
+        }
+        currentScene = scene.name;
     }
 
     [ContextMenu("Enter church")]
