@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -26,6 +28,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GameObject optionButtonPrefab;
     private List<GameObject> currentOptions = new List<GameObject>();
+
+    [Header("Audio")]
+    [SerializeField]
+    private StudioEventEmitter soundEmitter;
 
     private int currentSentence = 0;
 
@@ -89,6 +95,7 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
         currentDialogueData = null;
         OnEndDialogue.Invoke();
+        soundEmitter.Stop();
     }
 
     private IEnumerator DisplaySentece()
@@ -117,11 +124,13 @@ public class DialogueManager : MonoBehaviour
         }
 
         //typewriter effect
+        soundEmitter.Play();
         for (int i = 0; i <= currentDialogueData[currentSentence].text.Length; i++)
         {
             dialogueText.text = currentDialogueData[currentSentence].text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
         }
+        soundEmitter.Stop();
         isSentenceOngoing = false;
         yield return null;
     }

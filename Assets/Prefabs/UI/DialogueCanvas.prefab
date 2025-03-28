@@ -400,6 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5143510362981515206}
   - component: {fileID: 4550025092378664647}
+  - component: {fileID: 6449553523804844796}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -440,12 +441,44 @@ MonoBehaviour:
   characterImage: {fileID: 3618846960736406057}
   dialogueOptionParent: {fileID: 5471645127442049943}
   optionButtonPrefab: {fileID: 3483277484808424559, guid: 031eff10276964c47aef19d8a277fcae, type: 3}
+  soundEmitter: {fileID: 6449553523804844796}
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6449553523804844796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566682569337959254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1081515441
+      Data2: 1080519284
+      Data3: -13100646
+      Data4: -644503085
+    Path: event:/SFX/RatDialogue
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &6409062984890535706
 PrefabInstance:
   m_ObjectHideFlags: 0
