@@ -6075,6 +6075,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: Params.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: Params.Array.data[0].Name
+      value: loop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: Params.Array.data[1].Name
+      value: TextSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449553523804844796, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      propertyPath: Params.Array.data[1].Value
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
