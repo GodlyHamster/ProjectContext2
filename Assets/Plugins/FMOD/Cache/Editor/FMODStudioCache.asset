@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9125806392477888398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/char_footsteps/Church
+  m_EditorClassIdentifier: 
+  Name: Church
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3877867346
+    data2: 3605682130
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-8656633557376296413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +84,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638785219923963180
+  lastModified: 638785942229962048
   FileSizes: []
   Exists: 1
 --- !u!114 &-6908326686213193610
@@ -208,7 +232,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Desktop/Music Bank.bank
   Name: Desktop/Music Bank
   StudioPath: bank:/Music Bank
-  lastModified: 638785860194588633
+  lastModified: 638785942229894064
   FileSizes: []
   Exists: 1
 --- !u!114 &-6037675110460456148
@@ -226,7 +250,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Amb Bank.bank
   Name: Amb Bank
   StudioPath: bank:/Amb Bank
-  lastModified: 638784268551718260
+  lastModified: 638785942228209252
   FileSizes: []
   Exists: 1
 --- !u!114 &-5585298445816034547
@@ -389,30 +413,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-3731505634042354765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/char_footsteps/Church
-  m_EditorClassIdentifier: 
-  Name: Church
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3877867346
-    data2: 3605682130
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-3409446999931432900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,51 +514,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2897462299930408132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/char_footsteps/Dump
-  m_EditorClassIdentifier: 
-  Name: Dump
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2706499366
-    data2: 2050203140
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-1610631249571835588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Plugins/FMOD/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638785219923969471
-  FileSizes:
-  - Name: 
-    Value: 1808
-  Exists: 1
---- !u!114 &-827863718202321675
+--- !u!114 &-1699876247438554922
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -582,6 +538,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1610631249571835588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638785942229972045
+  FileSizes:
+  - Name: 
+    Value: 1808
+  Exists: 1
 --- !u!114 &-498446747803610474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +573,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/SFX Bank.bank
   Name: SFX Bank
   StudioPath: bank:/SFX Bank
-  lastModified: 638785219924177386
+  lastModified: 638785942230694237
   FileSizes: []
   Exists: 1
 --- !u!114 &-390760720129905906
@@ -643,7 +619,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Desktop/Amb Bank.bank
   Name: Desktop/Amb Bank
   StudioPath: bank:/Amb Bank
-  lastModified: 638787622834667346
+  lastModified: 638787624382496228
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -690,7 +666,7 @@ MonoBehaviour:
   - {fileID: 1338774397905361032}
   StringsBanks:
   - {fileID: -1610631249571835588}
-  cacheTime: 638787623462091655
+  cacheTime: 638787624382971052
   cacheVersion: 131846
 --- !u!114 &2873941088098922
 MonoBehaviour:
@@ -737,7 +713,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Music Bank.bank
   Name: Music Bank
   StudioPath: bank:/Music Bank
-  lastModified: 638785218080945245
+  lastModified: 638785942230640262
   FileSizes: []
   Exists: 1
 --- !u!114 &91802641314135404
@@ -853,7 +829,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Desktop/SFX Bank.bank
   Name: Desktop/SFX Bank
   StudioPath: bank:/SFX Bank
-  lastModified: 638787623462091655
+  lastModified: 638787624382971052
   FileSizes: []
   Exists: 1
 --- !u!114 &348730261973473525
@@ -1004,7 +980,7 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638787622834728062
+  lastModified: 638787624382626059
   FileSizes: []
   Exists: 1
 --- !u!114 &1398508368154792411
@@ -1231,6 +1207,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5815751425072662698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/char_footsteps/Dump
+  m_EditorClassIdentifier: 
+  Name: Dump
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2706499366
+    data2: 2050203140
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5864235416540255474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,9 +1417,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3731505634042354765}
-  - {fileID: -827863718202321675}
-  - {fileID: -2897462299930408132}
+  - {fileID: -9125806392477888398}
+  - {fileID: -1699876247438554922}
+  - {fileID: 5815751425072662698}
   MinDistance: 1
   MaxDistance: 20
   Length: 2000

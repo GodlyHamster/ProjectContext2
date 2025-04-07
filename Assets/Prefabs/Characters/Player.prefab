@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9177010993149715179}
   - component: {fileID: 5217210595909975220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 947355871533995468}
   - component: {fileID: 8106566956917469855}
   - component: {fileID: 3097131717633452841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionRadius: 2
+  playerCollider: {fileID: 3606740047323337442}
 --- !u!54 &3097131717633452841
 Rigidbody:
   m_ObjectHideFlags: 0

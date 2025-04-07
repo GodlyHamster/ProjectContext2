@@ -6466,12 +6466,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462436306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1048222514}
+  m_Father: {fileID: 780936760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11829,9 +11829,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4779868210094495712, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 462436309}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+--- !u!1 &780936759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1978419306629120417, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+  m_PrefabInstance: {fileID: 780936758}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &780936760 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4779868210094495712, guid: 2a45694106653c84ebb95e847f21cf9a, type: 3}
+  m_PrefabInstance: {fileID: 780936758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &783818001
 GameObject:
   m_ObjectHideFlags: 0
@@ -15576,11 +15589,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1048222514 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5249311023486381254, guid: 732232b29f2501e4bb089089e88189ca, type: 3}
-  m_PrefabInstance: {fileID: 1316207212}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1060621283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19360,10 +19368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5249311023486381254, guid: 732232b29f2501e4bb089089e88189ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 462436309}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732232b29f2501e4bb089089e88189ca, type: 3}
 --- !u!4 &1319395765 stripped
@@ -21661,7 +21666,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 85321deef28d0914fb55cc3b2c64bfa4, type: 2}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].key
@@ -21672,6 +21677,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2969867596248978699, guid: 85321deef28d0914fb55cc3b2c64bfa4, type: 2}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
+      propertyPath: m_SceneBindings.Array.data[3].key
+      value: 
+      objectReference: {fileID: -779920157754136286, guid: 85321deef28d0914fb55cc3b2c64bfa4, type: 2}
+    - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 462436306}
@@ -21679,6 +21688,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[2].value
       value: 
       objectReference: {fileID: 78754104}
+    - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
+      propertyPath: m_SceneBindings.Array.data[3].value
+      value: 
+      objectReference: {fileID: 780936759}
     - target: {fileID: 2333046275209536303, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: playable
       value: 
