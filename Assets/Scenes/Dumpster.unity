@@ -7059,10 +7059,10 @@ PrefabInstance:
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 9947d2232579db14191c22f061d347d1, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].key
@@ -7083,7 +7083,7 @@ PrefabInstance:
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.data[5].key
       value: 
-      objectReference: {fileID: 3921880093348120020, guid: 9947d2232579db14191c22f061d347d1, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 506305688388107822, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
@@ -7155,10 +7155,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6687714180638897221, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1687749984}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
 --- !u!114 &1520811469 stripped
 MonoBehaviour:
@@ -7171,173 +7168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb90de61d5bdadd4baca5f81779663b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1522562646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1522562647}
-  - component: {fileID: 1522562650}
-  - component: {fileID: 1522562649}
-  - component: {fileID: 1522562648}
-  - component: {fileID: 1522562651}
-  - component: {fileID: 1522562652}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1522562647
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1522562648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1053115202
-      Data2: 1233655162
-      Data3: -493520706
-      Data4: -1563033234
-    Path: event:/Music/Church Music
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1522562649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1437618085
-      Data2: 1335273092
-      Data3: -1716615018
-      Data4: 1362281253
-    Path: event:/Music/gameplay music
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1522562650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb57fc2cae20a944b150667d280e931, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameMusic: {fileID: 1522562649}
-  churchMusic: {fileID: 1522562648}
-  churchScene: church
-  musicVolume: 0.5
---- !u!114 &1522562651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbbaf8d83089914ab13ec4b44e055a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questStepTrigger:
-    name: BQ
-    state: 3
-    step: 0
-  triggerAfterCompletion: 0
-  eventTriggered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1522562650}
-        m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
-        m_MethodName: SetFestivalProgress
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 100
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1522562652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522562646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Master
-  - Music Bank
-  - SFX Bank
-  - Amb Bank
-  CollisionTag: 
-  PreloadSamples: 0
 --- !u!1001 &1524233312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8286,39 +8116,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6687714180638897221, guid: 30e26b67d6d6c4a4d8308f1e5a0463d5, type: 3}
   m_PrefabInstance: {fileID: 1520811468}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1687749984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687749981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbbaf8d83089914ab13ec4b44e055a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questStepTrigger:
-    name: RQ
-    state: 0
-    step: 0
-  triggerAfterCompletion: 0
-  eventTriggered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1520811469}
-        m_TargetAssemblyTypeName: CutsceneManager, Assembly-CSharp
-        m_MethodName: PlayCutscene
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 9947d2232579db14191c22f061d347d1, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Playables.PlayableAsset,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1695023594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10375,4 +10172,3 @@ SceneRoots:
   - {fileID: 1893222369}
   - {fileID: 17887374}
   - {fileID: 1520811468}
-  - {fileID: 1522562647}
